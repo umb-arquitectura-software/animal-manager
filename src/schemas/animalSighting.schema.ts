@@ -22,6 +22,9 @@ export class AnimalSighting {
 
   @Prop({ required: true })
   coordinates: number[];
+
+  @Prop({ required: false })
+  img: string;
 }
 
 export const AnimalSightingSchema = SchemaFactory.createForClass(AnimalSighting);

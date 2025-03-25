@@ -1,3 +1,5 @@
+import { IsString } from "class-validator";
+
 export class CreateAnimalSightingDto {
 
   user: {
@@ -12,4 +14,7 @@ export class CreateAnimalSightingDto {
   }
 
   coordinates: number[];
+
+  @IsString()
+  img: string;
 }
